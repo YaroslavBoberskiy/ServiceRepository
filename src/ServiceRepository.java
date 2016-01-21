@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Created by YB on 21.01.2016.
  */
-public class ServiceRepository<T extends Service> {
+public class ServiceRepository<T extends Servicable> {
 
     private List<T> services;
 
@@ -20,4 +20,5 @@ public class ServiceRepository<T extends Service> {
     public List<T> getServices (){
         return services;
     }
+
 }
